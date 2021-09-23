@@ -2,10 +2,15 @@ package kata1;
 import java.util.*;
 public class Kata1 {
     
-    // test
+    
     public static void main(String[] args) {
-        Person person = new Person("Blas", new Date(49,8,24));
-        System.out.println(person.getName() + "tinee " + person.getAge());
+        Calendar date;
+        date = GregorianCalendar.getInstance();
+        date.set(1949,9,24);
+        
+        Person person = new Person("Blas", date);
+      
+        System.out.println(person.getName() + " tiene " + person.getAge() + " años");
     }
     
 }
