@@ -18,13 +18,13 @@ public class Kata2 {
         
         Map<Integer, Integer> histogram = new HashMap<Integer, Integer>();
         
-        /*
+        
         for (int key : data) {
             histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
         }
         
-        */
         
+        /*
         for (int i = 0; i < data.length; i++) {
             
            
@@ -35,6 +35,7 @@ public class Kata2 {
             }
 
         }
+        */
       
         for(Integer key : histogram.keySet()){
             System.out.println(key + "==>" + histogram.get(key));
