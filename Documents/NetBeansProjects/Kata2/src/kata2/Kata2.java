@@ -27,7 +27,7 @@ public class Kata2 {
         
         for (int i = 0; i < data.length; i++) {
             
-            
+           
             if (histogram.keySet().contains(data[i] )){
                 histogram.put(data[i], histogram.get(data[i]) +1);                
             }else{
