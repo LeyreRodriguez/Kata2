@@ -27,7 +27,7 @@ public class Kata2 {
             }else{
                 histogram.put(data[i],1);
             }
-            
+
         }
        
         for(Integer key : histogram.keySet()){
