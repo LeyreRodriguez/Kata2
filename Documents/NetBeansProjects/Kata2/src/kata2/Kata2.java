@@ -10,21 +10,25 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class Kata2 {
-
+    
+    
     public static void main(String[] args) {
-        //Map<Integer, Integer> data = new HashMap<Integer, Integer>();
+        
         int[] data = {4,2,3,6,8,4,7,8,5,6,7,4,8,5,0};
         
         
-        Map<Integer, Integer> histogram = new HashMap<Integer, Integer>();
+        Histogram histo = new Histogram(data);
         
-        for (int key : data) {
-            histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
-        }
+        Map<Integer,Integer> histogr = histo.getHistogram();
 
-        for(Integer key : histogram.keySet()){
-            System.out.println(key + "==>" + histogram.get(key));
+           
+        for(Integer key : histogr.keySet()){
+            System.out.println(key + "==>" + histogr.get(key));
         }
     }
+    
+    
 }
+
+    
         
