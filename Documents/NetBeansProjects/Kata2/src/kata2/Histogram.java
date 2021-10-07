@@ -19,6 +19,7 @@ public class Histogram {
     }
 
     
+    
 
     public int[] getData() {
         return data;
