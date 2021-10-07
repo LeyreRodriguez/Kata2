@@ -17,7 +17,6 @@ public class Histogram<T> {
     public Histogram( T[] data) {
         this.data = data;
     }
-
     
     
 

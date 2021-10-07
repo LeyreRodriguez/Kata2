@@ -13,15 +13,15 @@ public class Kata2 {
         
     public static void main(String[] args) {
         
-        Integer[] data = {4,2,3,6,8,4,7,8,5,6,7,4,8,5,0};
+        String[] data = {"Rosa", "Pepe", "María", "Pepe", "Rosa"};
         
         
         Histogram histo = new Histogram(data);
         
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
 
            
-        for(Integer key : histogr.keySet()){
+        for(String key : histogr.keySet()){
             System.out.println(key + "==>" + histogr.get(key));
         }
     }
