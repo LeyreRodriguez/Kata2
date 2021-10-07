@@ -13,7 +13,7 @@ public class Kata2 {
         
     public static void main(String[] args) {
         
-        int[] data = {4,2,3,6,8,4,7,8,5,6,7,4,8,5,0};
+        Integer[] data = {4,2,3,6,8,4,7,8,5,6,7,4,8,5,0};
         
         
         Histogram histo = new Histogram(data);
